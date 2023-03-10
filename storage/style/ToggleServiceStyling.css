@@ -1,0 +1,74 @@
+#borderSwitch {
+    background-color: var(--colour-gray-03);
+    width: 5vmin;
+    height: 2vmin;
+    border-radius: var(--radius-checkbox);
+    cursor: pointer;
+    border: solid 1px var(--colour-white-01);
+}
+
+#borderSwitchBall {
+    background-color: var(--colour-gray-03);
+    height: 100%;
+    aspect-ratio: 1;
+    border-radius: var(--radius-checkbox);
+    transition: background-color .15s ease-out;
+}
+
+#borderSwitchBackground {
+    background-color: var(--colour-red-01);
+    height: 100%;
+    width: 100%;
+    border-radius: var(--radius-checkbox);
+    right: 0;
+    position: relative;
+    transition: right .15s ease-out;
+}
+
+#borderSwitch[data-border=true]>#borderSwitchBackground {
+    right: -3vmin;
+    transition: right .15s ease-out;
+}
+
+#borderSwitch[data-border=true] #borderSwitchBall {
+    background-color: var(--colour-red-01);
+    transition: background-color .15s ease-out;
+}
+
+div.headerContainer:has(#borderSwitch[data-border=true]) * {
+    color: var(--colour-white-01);
+}
+
+div.buttonDiv {
+    width: 10vmin;
+    height: 2vmin;
+    cursor: pointer;
+    text-align: center;
+    background-color: var(--colour-gray-03);
+    border: solid 1px var(--colour-white-01);
+    border-radius: var(--radius-button);
+    transition:
+        border-radius .15s ease-out,
+        background-color .15s ease-out,
+        border .15s ease-out;
+}
+
+div.buttonDiv:hover {
+    color: var(--colour-gray-03);
+    background-color: var(--colour-white-01);
+    border: solid 1px var(--colour-red-01);
+    border-radius: var(--radius-checkbox);
+    transition:
+        border-radius .15s ease-out,
+        background-color .15s ease-out,
+        border .15s ease-out;
+}
+
+div.buttonDiv:active {
+    color: var(--colour-red-01);
+    background-color: var(--colour-gray-03);
+    border: solid 1px var(--colour-white-01);
+    transition:
+        background-color .15s ease-out,
+        border .15s ease-out;
+}

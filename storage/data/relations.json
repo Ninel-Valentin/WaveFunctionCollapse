@@ -1,0 +1,695 @@
+[
+    {
+        "id": 1,
+        "fileName": "Flower-patch-Magenta-01.png",
+        "links": [
+            "GGG",
+            "GG",
+            "GGG"
+        ]
+    },
+    {
+        "id": 2,
+        "fileName": "Flower-patch-Magenta-02.png",
+        "links": [
+            "GGG",
+            "GG",
+            "GGG"
+        ]
+    },
+    {
+        "id": 3,
+        "fileName": "Flower-patch-Magenta-03.png",
+        "links": [
+            "GGG",
+            "GG",
+            "GGG"
+        ]
+    },
+    {
+        "id": 4,
+        "fileName": "Flower-patch-Orange-01.png",
+        "links": [
+            "GGG",
+            "GG",
+            "GGG"
+        ]
+    },
+    {
+        "id": 5,
+        "fileName": "Flower-patch-Orange-02.png",
+        "links": [
+            "GGG",
+            "GG",
+            "GGG"
+        ]
+    },
+    {
+        "id": 6,
+        "fileName": "Flower-patch-Orange-03.png",
+        "links": [
+            "GGG",
+            "GG",
+            "GGG"
+        ]
+    },
+    {
+        "id": 7,
+        "fileName": "Flower-patch-Pink-01.png",
+        "links": [
+            "GGG",
+            "GG",
+            "GGG"
+        ]
+    },
+    {
+        "id": 8,
+        "fileName": "Flower-patch-Pink-02.png",
+        "links": [
+            "GGG",
+            "GG",
+            "GGG"
+        ]
+    },
+    {
+        "id": 9,
+        "fileName": "Flower-patch-Pink-03.png",
+        "links": [
+            "GGG",
+            "GG",
+            "GGG"
+        ]
+    },
+    {
+        "id": 10,
+        "fileName": "Flower-patch-Violet-01.png",
+        "links": [
+            "GGG",
+            "GG",
+            "GFG"
+        ]
+    },
+    {
+        "id": 11,
+        "fileName": "Flower-patch-Violet-02.png",
+        "links": [
+            "GGG",
+            "GG",
+            "GGG"
+        ]
+    },
+    {
+        "id": 12,
+        "fileName": "Flower-patch-Violet-03.png",
+        "links": [
+            "GGG",
+            "GG",
+            "GGG"
+        ]
+    },
+    {
+        "id": 13,
+        "fileName": "Grass-Fill.png",
+        "links": [
+            "GGG",
+            "GG",
+            "GGG"
+        ]
+    },
+    {
+        "id": 14,
+        "fileName": "Weeds.png",
+        "links": [
+            "GGG",
+            "GG",
+            "GGG"
+        ]
+    },
+    {
+        "id": 15,
+        "fileName": "Path-Corner-NE.png",
+        "links": [
+            "GGG",
+            "PG",
+            "PPG"
+        ]
+    },
+    {
+        "id": 16,
+        "fileName": "Path-Corner-NW.png",
+        "links": [
+            "GGG",
+            "GP",
+            "GPP"
+        ]
+    },
+    {
+        "id": 17,
+        "fileName": "Path-Corner-SE.png",
+        "links": [
+            "PPG",
+            "PG",
+            "GGG"
+        ]
+    },
+    {
+        "id": 18,
+        "fileName": "Path-Corner-SW.png",
+        "links": [
+            "GPP",
+            "GP",
+            "GGG"
+        ]
+    },
+    {
+        "id": 19,
+        "fileName": "Path-Edge-E.png",
+        "links": [
+            "PPG",
+            "PG",
+            "PPG"
+        ]
+    },
+    {
+        "id": 20,
+        "fileName": "Path-Edge-N.png",
+        "links": [
+            "GGG",
+            "PP",
+            "PPP"
+        ]
+    },
+    {
+        "id": 21,
+        "fileName": "Path-Edge-S.png",
+        "links": [
+            "PPP",
+            "PP",
+            "GGG"
+        ]
+    },
+    {
+        "id": 22,
+        "fileName": "Path-Edge-W.png",
+        "links": [
+            "GPP",
+            "GP",
+            "GPP"
+        ]
+    },
+    {
+        "id": 23,
+        "fileName": "Path-End-E.png",
+        "links": [
+            "GGG",
+            "GP",
+            "GGG"
+        ]
+    },
+    {
+        "id": 24,
+        "fileName": "Path-End-N.png",
+        "links": [
+            "GPG",
+            "GG",
+            "GGG"
+        ]
+    },
+    {
+        "id": 25,
+        "fileName": "Path-End-S.png",
+        "links": [
+            "GGG",
+            "GG",
+            "GPG"
+        ]
+    },
+    {
+        "id": 26,
+        "fileName": "Path-End-W.png",
+        "links": [
+            "GGG",
+            "PG",
+            "GGG"
+        ]
+    },
+    {
+        "id": 27,
+        "fileName": "Path-Fill.png",
+        "links": [
+            "PPP",
+            "PP",
+            "PPP"
+        ]
+    },
+    {
+        "id": 28,
+        "fileName": "Path-Long-Corner-NE.png",
+        "links": [
+            "GGG",
+            "PG",
+            "GPG"
+        ]
+    },
+    {
+        "id": 29,
+        "fileName": "Path-Long-Corner-NW.png",
+        "links": [
+            "GGG",
+            "GP",
+            "GPG"
+        ]
+    },
+    {
+        "id": 30,
+        "fileName": "Path-Long-Corner-SE.png",
+        "links": [
+            "GPG",
+            "PG",
+            "GGG"
+        ]
+    },
+    {
+        "id": 31,
+        "fileName": "Path-Long-Corner-SW.png",
+        "links": [
+            "GPG",
+            "GP",
+            "GGG"
+        ]
+    },
+    {
+        "id": 32,
+        "fileName": "Path-Long-H.png",
+        "links": [
+            "GGG",
+            "PP",
+            "GGG"
+        ]
+    },
+    {
+        "id": 33,
+        "fileName": "Path-Long-V.png",
+        "links": [
+            "GPG",
+            "GG",
+            "GPG"
+        ]
+    },
+    {
+        "id": 34,
+        "fileName": "River-Corner-NE.png",
+        "links": [
+            "GGG",
+            "RG",
+            "RRG"
+        ]
+    },
+    {
+        "id": 35,
+        "fileName": "River-Corner-NW.png",
+        "links": [
+            "GGG",
+            "GR",
+            "GRR"
+        ]
+    },
+    {
+        "id": 36,
+        "fileName": "River-Corner-SE.png",
+        "links": [
+            "RRG",
+            "RG",
+            "GGG"
+        ]
+    },
+    {
+        "id": 37,
+        "fileName": "River-Corner-SW.png",
+        "links": [
+            "GRR",
+            "GR",
+            "GGG"
+        ]
+    },
+    {
+        "id": 38,
+        "fileName": "River-Edge-E.png",
+        "links": [
+            "RRG",
+            "RG",
+            "RRG"
+        ]
+    },
+    {
+        "id": 39,
+        "fileName": "River-Edge-N.png",
+        "links": [
+            "GGG",
+            "RR",
+            "RRR"
+        ]
+    },
+    {
+        "id": 40,
+        "fileName": "River-Edge-S.png",
+        "links": [
+            "RRR",
+            "RR",
+            "GGG"
+        ]
+    },
+    {
+        "id": 41,
+        "fileName": "River-Edge-W.png",
+        "links": [
+            "GRR",
+            "GR",
+            "GRR"
+        ]
+    },
+    {
+        "id": 42,
+        "fileName": "River-Entry-Edge-EN.png",
+        "links": [
+            "RRG",
+            "RR",
+            "GGG"
+        ]
+    },
+    {
+        "id": 43,
+        "fileName": "River-Entry-Edge-ES.png",
+        "links": [
+            "GGG",
+            "RR",
+            "RRG"
+        ]
+    },
+    {
+        "id": 44,
+        "fileName": "River-Entry-Edge-NE.png",
+        "links": [
+            "GRG",
+            "GR",
+            "GRR"
+        ]
+    },
+    {
+        "id": 45,
+        "fileName": "River-Entry-Edge-NW.png",
+        "links": [
+            "GRG",
+            "RG",
+            "RRG"
+        ]
+    },
+    {
+        "id": 46,
+        "fileName": "River-Entry-Edge-SE.png",
+        "links": [
+            "GRR",
+            "GR",
+            "GRG"
+        ]
+    },
+    {
+        "id": 47,
+        "fileName": "River-Entry-Edge-SW.png",
+        "links": [
+            "RRG",
+            "RG",
+            "GRG"
+        ]
+    },
+    {
+        "id": 48,
+        "fileName": "River-Entry-Edge-WN.png",
+        "links": [
+            "GRR",
+            "RR",
+            "GGG"
+        ]
+    },
+    {
+        "id": 49,
+        "fileName": "River-Entry-Edge-WS.png",
+        "links": [
+            "GGG",
+            "RR",
+            "GRR"
+        ]
+    },
+    {
+        "id": 50,
+        "fileName": "River-End-E.png",
+        "links": [
+            "GGG",
+            "GR",
+            "GGG"
+        ]
+    },
+    {
+        "id": 51,
+        "fileName": "River-End-N.png",
+        "links": [
+            "GRG",
+            "GG",
+            "GGG"
+        ]
+    },
+    {
+        "id": 52,
+        "fileName": "River-End-S.png",
+        "links": [
+            "GGG",
+            "GG",
+            "GRG"
+        ]
+    },
+    {
+        "id": 53,
+        "fileName": "River-End-W.png",
+        "links": [
+            "GGG",
+            "RG",
+            "GGG"
+        ]
+    },
+    {
+        "id": 54,
+        "fileName": "River-Entry-E.png",
+        "links": [
+            "RRG",
+            "RR",
+            "RRG"
+        ]
+    },
+    {
+        "id": 55,
+        "fileName": "River-Entry-N.png",
+        "links": [
+            "GRG",
+            "RR",
+            "RRR"
+        ]
+    },
+    {
+        "id": 56,
+        "fileName": "River-Entry-S.png",
+        "links": [
+            "RRR",
+            "RR",
+            "GRG"
+        ]
+    },
+    {
+        "id": 57,
+        "fileName": "River-Entry-W.png",
+        "links": [
+            "GRR",
+            "RR",
+            "GRR"
+        ]
+    },
+    {
+        "id": 58,
+        "fileName": "River-Entry2-NE.png",
+        "links": [
+            "GRG",
+            "RR",
+            "RRG"
+        ]
+    },
+    {
+        "id": 59,
+        "fileName": "River-Entry2-NW.png",
+        "links": [
+            "GRG",
+            "RR",
+            "GRR"
+        ]
+    },
+    {
+        "id": 60,
+        "fileName": "River-Entry2-SE.png",
+        "links": [
+            "RRG",
+            "RR",
+            "GRG"
+        ]
+    },
+    {
+        "id": 61,
+        "fileName": "River-Entry2-SW.png",
+        "links": [
+            "GRR",
+            "RR",
+            "GRG"
+        ]
+    },
+    {
+        "id": 62,
+        "fileName": "River-Fill-Corner-NE.png",
+        "links": [
+            "RRG",
+            "RR",
+            "RRR"
+        ]
+    },
+    {
+        "id": 63,
+        "fileName": "River-Fill-Corner-NW.png",
+        "links": [
+            "GRR",
+            "RR",
+            "RRR"
+        ]
+    },
+    {
+        "id": 64,
+        "fileName": "River-Fill-Corner-SE.png",
+        "links": [
+            "RRR",
+            "RR",
+            "RRG"
+        ]
+    },
+    {
+        "id": 65,
+        "fileName": "River-Fill-Corner-SW.png",
+        "links": [
+            "RRR",
+            "RR",
+            "GRR"
+        ]
+    },
+    {
+        "id": 66,
+        "fileName": "River-Fill.png",
+        "links": [
+            "RRR",
+            "RR",
+            "RRR"
+        ]
+    },
+    {
+        "id": 67,
+        "fileName": "River-Fork.png",
+        "links": [
+            "GRG",
+            "RR",
+            "GRG"
+        ]
+    },
+    {
+        "id": 68,
+        "fileName": "River-Long-Corner-NE.png",
+        "links": [
+            "GGG",
+            "RG",
+            "GRG"
+        ]
+    },
+    {
+        "id": 69,
+        "fileName": "River-Long-Corner-NW.png",
+        "links": [
+            "GGG",
+            "GR",
+            "GRG"
+        ]
+    },
+    {
+        "id": 70,
+        "fileName": "River-Long-Corner-SE.png",
+        "links": [
+            "GRG",
+            "RG",
+            "GGG"
+        ]
+    },
+    {
+        "id": 71,
+        "fileName": "River-Long-Corner-SW.png",
+        "links": [
+            "GRG",
+            "GR",
+            "GGG"
+        ]
+    },
+    {
+        "id": 72,
+        "fileName": "River-Long-H.png",
+        "links": [
+            "GGG",
+            "RR",
+            "GGG"
+        ]
+    },
+    {
+        "id": 73,
+        "fileName": "River-Long-V.png",
+        "links": [
+            "GRG",
+            "GG",
+            "GRG"
+        ]
+    },
+    {
+        "id": 74,
+        "fileName": "River-T_Edge-E.png",
+        "links": [
+            "GRG",
+            "RG",
+            "GRG"
+        ]
+    },
+    {
+        "id": 75,
+        "fileName": "River-T_Edge-N.png",
+        "links": [
+            "GGG",
+            "RR",
+            "GRG"
+        ]
+    },
+    {
+        "id": 76,
+        "fileName": "River-T_Edge-S.png",
+        "links": [
+            "GRG",
+            "RR",
+            "GGG"
+        ]
+    },
+    {
+        "id": 77,
+        "fileName": "River-T_Edge-W.png",
+        "links": [
+            "GRG",
+            "GR",
+            "GRG"
+        ]
+    }
+]
