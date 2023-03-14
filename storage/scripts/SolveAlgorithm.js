@@ -1,14 +1,19 @@
 import tilesJsonData from '../data/relations.json' assert {type: 'json'};
-import Consts from "./utils/Consts.js";
 import utils from "./utils/utils.js";
 
 var rows, cols;
 var algorithmMatrix;
 
+export function ClearGrid() {
+    InitializeAlgorithm();
+    ClearDisplay();
+    UpdateDisplay();
+}
+
 function InitializeAlgorithm() {
     [rows, cols] = document.querySelector('div.tile[data-position]:last-child').getAttribute('data-position').split(':');
 
-    // Initialize the empty matrix
+    // Set the empty matrix
     algorithmMatrix = [];
     for (let i = 0; i <= rows; i++) {
         let row = [];
@@ -19,30 +24,47 @@ function InitializeAlgorithm() {
     }
 }
 
-function SolveAlgorithm() {
-    InitializeAlgorithm();
-    RefreshDisplay();
+function ClearDisplay() {
+    for (let i = 0; i <= rows; i++) {
+        for (let j = 0; j <= cols; j++) {
+            let tile = document.querySelector(`div.tile[data-position="${i}:${j}"]`);
+            tile.removeAttribute('style');
+            tile.removeAttribute('data-tileid');
+        }
+    }
+}
+
+function UpdateDisplay() {
+    for (let i = 0; i <= rows; i++) {
+        for (let j = 0; j <= cols; j++) {
+            document.querySelector(`div.tile[data-position="${i}:${j}"]`).innerText = algorithmMatrix[i][j].length ?? '';
+        }
+    }
+}
+
+export function StartAlgorithm() {
+    ClearGrid();
+    SolveAlgorithm();
+}
+
+export function SolveAlgorithm() {
 
     // Check for already initialized tiles
     let initializedTiles = document.querySelectorAll('div.tile[data-position][data-tileId');
-    if (initializedTiles.length > 0) {
-
-    } else
+    if (initializedTiles.length == 0)
         GenerateStartingTile();
 
     let iterations = algorithmMatrix.flat().filter(x => !!x.length).length;
     for (let i = 0; i < iterations; i++) {
-        let [rowPos, colPos] = GetTileWithLeastPossibilities();
-        if (algorithmMatrix.flat().filter(x => x.length == 0).length > 0) {
-            console.log("STOPPED!");
+        // Reset algorithm if it went wrong
+        if (algorithmMatrix.flat().filter(x => x?.length == 0).length > 0) {
+            utils.ErrorLogs.AlgorithmLogicError();
+            // return StartAlgorithm();
             return;
         }
-        if (!algorithmMatrix[rowPos][colPos].length) {
-            console.log(algorithmMatrix[rowPos][colPos]);
-            console.log("SKIPPED!")
-            //     i--;
-            continue;
-        }
+
+        let [rowPos, colPos] = GetTileWithLeastPossibilities();
+
         UpdateTile(rowPos, colPos);
     }
 }
@@ -72,7 +94,7 @@ function UpdateTile(row, col, tileId = null) {
     for (let neighbourJson of Object.entries(affectedNeighbours)) {
         UpdateRequirements(neighbourJson);
     }
-    RefreshDisplay();
+    UpdateDisplay();
 }
 
 /**
@@ -86,14 +108,6 @@ function UpdateRequirements(neighbourJson) {
         algorithmMatrix[coords[0]][coords[1]] = algorithmMatrix[coords[0]][coords[1]].filter(
             possibleTile =>
                 utils.GetDirectionData(possibleTile.id, neighbourDir) == utils.GetDirectionData(tileId, utils.GetOppositeDirection(neighbourDir)));
-    }
-}
-
-function RefreshDisplay() {
-    for (let i = 0; i <= rows; i++) {
-        for (let j = 0; j <= cols; j++) {
-            document.querySelector(`div.tile[data-position="${i}:${j}"]`).innerText = algorithmMatrix[i][j].length ?? '';
-        }
     }
 }
 
@@ -141,4 +155,4 @@ function GetTileWithLeastPossibilities() {
     return [rowPos, colPos];
 }
 
-SolveAlgorithm();
+// StartAlgorithm();

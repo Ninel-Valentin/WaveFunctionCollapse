@@ -49,8 +49,11 @@ export default class utils {
          * @param {Consts.direction} direction
          */
         DirectionUnknown: (direction) => {
-            console.log(`ERROR: ~/GetDirectionData(): Unknown direction "${direction}"`)
-        }
+            console.log(`ERROR: ~/GetDirectionData(): Unknown direction "${direction}".`)
+        },
+        AlgorithmLogicError: () => {
+            console.log(`ERROR: ~/StartAlgorithm(): Bad algorithm solving try! Retrying...`)
+        },
     }
 
     static GetRandomInteger(min, max) {

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/storage/style/ToggleServiceStyling.css" />
     <script type="module" src="/storage/scripts/GenerateGrid.js" defer="defer"></script>
     <script type="module" src="/storage/scripts/SolveAlgorithm.js" defer="defer"></script>
-    <script src="/storage/scripts/ToggleService.js" defer="defer"></script>
+    <script type="module" src="/storage/scripts/ToggleService.js" defer="defer"></script>
     <title>Wave Function Collapse - Ninel-Valentin Bănică</title>
 </head>
 
@@ -24,10 +24,14 @@
             </div>
         </div>
         <div class="headerContainer">
-            <div class="buttonDiv">SOLVE</div>
+            <div id="solveButton" class="buttonDiv">SOLVE</div>
         </div>
         <div class="headerContainer">
             <div id="resetButton" class="buttonDiv">RESET</div>
+        </div>
+
+        <div class="headerContainer">
+            <div id="clearButton" class="buttonDiv">CLEAR</div>
         </div>
     </header>
     <main>
