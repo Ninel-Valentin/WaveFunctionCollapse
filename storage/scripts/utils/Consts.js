@@ -1,13 +1,9 @@
 export default class Consts {
-    static tileBorderlessSize = 96; // 64 + 32
-    static tileSize = 98; // + border(1|1)
+    static tileSize = 96; // 64 + 32
+    static tileWithBorder = 98; // + border(1|1)
+    static fileCount = 321;
 
-    static direction = {
-        N: "N",
-        E: "E",
-        S: "S",
-        W: "W"
-    };
+    static borderColor = '#ca3e47';
 
     static hexToTile = {
         "grass": [

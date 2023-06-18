@@ -1,17 +1,19 @@
 var fs = require('fs');
 
-for (let i = 275; i <= 326; i++) {
+for (let i = 67; i <= 99; i++) {
     var prevName, newName;
-    if (i < 100)
-        prevName = `0${i}`;
-    else
-        prevName = i;
+    prevName = i;
     prevName = `${prevName}.png`;
 
-    newName = i -52;
+    newName = "0" + i;
     newName = `${newName}.png`;
-    fs.rename(prevName, newName, function (err) {
-        if (err) throw err;
-        console.log('File Renamed.');
-    });
+
+    if (!fs.existsSync(newName)) {
+        fs.rename(prevName, newName, function (err) {
+            if (err) throw err;
+            console.log('File Renamed.');
+        });
+    }
+    else
+        i--;
 }

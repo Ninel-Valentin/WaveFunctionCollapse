@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=1820, initial-scale=1.0">
     <link rel="stylesheet" href="/storage/style/index.css" />
     <link rel="stylesheet" href="/storage/style/ToggleServiceStyling.css" />
-    <script type="module" src="/storage/scripts/AnalyzePicture.js" defer="defer"></script>
+    <script type="module" src="/storage/scripts/main.js" defer="defer"></script>
     <title>Wave Function Collapse - Ninel-Valentin Bănică</title>
 </head>
 
@@ -15,7 +15,7 @@
     <header>
         <div class="headerContainer">
             <span>BORDER</span>
-            <div data-border=true id="borderSwitch">
+            <div data-border=false id="borderSwitch">
                 <div id="borderSwitchBackground">
                     <div id="borderSwitchBall"></div>
                 </div>
@@ -27,14 +27,48 @@
         <div class="headerContainer">
             <div id="resetButton" class="buttonDiv">RESET</div>
         </div>
-
         <div class="headerContainer">
             <div id="clearButton" class="buttonDiv">CLEAR</div>
         </div>
     </header>
     <main>
+        <img width="96" height="96" id="brush" alt="brushImg" />
         <canvas data-border=true></canvas>
     </main>
+    <div id="tileSelectorBg">
+        <section id="tileSelector">
+            <h1>Select what types should the tile contain:</h1>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="water" value="Water">
+                        </td>
+                        <td>
+                            <label for="water">Water</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="grass" value="Grass">
+                        </td>
+                        <td>
+                            <label for="grass">Grass</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="sand" value="Sand">
+                        </td>
+                        <td>
+                            <label for="sand">Sand</label>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button id="filterBtn"> Filter </button>
+        </section>
+    </div>
     <footer>Ninel-Valentin Bănică © 2023</footer>
 </body>
 

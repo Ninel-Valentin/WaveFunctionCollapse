@@ -1,39 +1,40 @@
-import tilesJsonData from '../data/relations.json' assert {type: 'json'};
+import Consts from "./utils/Consts.js";
 
-const dataArr = [];
+export function returnPicturesData() {
+    const dataArr = [];
 
-for (let i = 1; i <= tilesJsonData.length; i++) {
+    for (let i = 1; i <= Consts.fileCount; i++) {
+        const links = [];
+        const img = new Image();
+        img.crossOrigin = "Anonymous";
+        img.onload = () => {
+            const context = document.createElement('canvas').getContext('2d', { willReadFrequently: true });;
+            context.drawImage(img, 0, 0);
 
-    const links = [];
-    const img = new Image();
-    img.crossOrigin = "Anonymous";
-    img.onload = () => {
-        const context = document.createElement('canvas').getContext('2d');
-        context.drawImage(img, 0, 0);
-
-        links.push([
-            RGBToHexFromData(context.getImageData(0, 0, 1, 1).data),
-            RGBToHexFromData(context.getImageData(32, 0, 1, 1).data),
-            RGBToHexFromData(context.getImageData(63, 0, 1, 1).data),
-            RGBToHexFromData(context.getImageData(63, 32, 1, 1).data),
-            RGBToHexFromData(context.getImageData(63, 63, 1, 1).data),
-            RGBToHexFromData(context.getImageData(32, 63, 1, 1).data),
-            RGBToHexFromData(context.getImageData(0, 63, 1, 1).data),
-            RGBToHexFromData(context.getImageData(0, 32, 1, 1).data),
-        ]);
+            links.push([
+                RGBToHexFromData(context.getImageData(0, 0, 1, 1).data),
+                RGBToHexFromData(context.getImageData(32, 0, 1, 1).data),
+                RGBToHexFromData(context.getImageData(63, 0, 1, 1).data),
+                RGBToHexFromData(context.getImageData(63, 32, 1, 1).data),
+                RGBToHexFromData(context.getImageData(63, 63, 1, 1).data),
+                RGBToHexFromData(context.getImageData(32, 63, 1, 1).data),
+                RGBToHexFromData(context.getImageData(0, 63, 1, 1).data),
+                RGBToHexFromData(context.getImageData(0, 32, 1, 1).data),
+            ]);
+            links.flat();
+        };
         links.flat();
-    };
 
-    let number = i < 10 ? `0${i}` : i;
-    img.src = `./storage/images/${number}.png`;
+        let number = `00${i}`.replace(/\d*(\d{3})/g, '$1');
+        img.src = `./storage/images/${number}.png`;
 
-    dataArr.push({
-        id: i - 1,
-        name: tilesJsonData[i - 1].fileName,
-        links
-    });
+        dataArr.push({
+            id: number,
+            links
+        });
+    }
+    return dataArr;
 }
-console.log(dataArr);
 
 function RGBToHexFromData(obj) {
     return RGBToHex(
