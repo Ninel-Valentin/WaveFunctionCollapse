@@ -1,4 +1,4 @@
-import tilesJsonData from '../../data/relations.json' assert {type: 'json'};
+import tilesJsonData from '../../data/relations.json' with {type: 'json'};
 import Consts from "./Consts.js";
 
 export default class utils {
